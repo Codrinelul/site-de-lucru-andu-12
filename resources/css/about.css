@@ -1,0 +1,30 @@
+/* ----------------------------------------------- */
+/* ABOUT
+/* ----------------------------------------------- */
+
+.about__main {
+  float: left;
+}
+
+.about__main__title {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.sidebar {
+  float: right;
+  margin-top: 10px;
+}
+.about__main__paragraph--black,
+.sidebar--black {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

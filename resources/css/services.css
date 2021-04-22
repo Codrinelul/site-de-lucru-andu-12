@@ -1,0 +1,58 @@
+/* ----------------------------------------------- */
+/* SERVICES
+/* ----------------------------------------------- */
+
+.section__title {
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.services__main__list {
+  padding: 0px;
+}
+
+.services__main__list__item {
+  list-style: none;
+  padding: 20px;
+  background-color: #e6e6e6;
+  margin-bottom: 5px;
+}
+
+.services__sidebar {
+  margin-top: 10px;
+  padding: 20px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.services__sidebar__email,
+.services__sidebar__name {
+  padding: 4px;
+  height: 25px;
+  width: 100%;
+  padding: 5px;
+  resize: none;
+}
+
+.services__sidebar__mesage {
+  padding: 4px;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  resize: none;
+}
+.services__sidebar__submitButton {
+  height: 25px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  margin-top: 5px;
+}

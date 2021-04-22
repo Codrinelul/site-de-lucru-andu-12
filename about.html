@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/about.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Codrin|Welcome</title>
+        <script src="https://kit.fontawesome.com/1491f15206.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header col-12">
+            <div class="container">
+                <div class="header__logoContainer col-6">
+                    <img class="header__logo" src="resources/img/LOGO Codrin.png" alt="codrin logo">
+                </div>
+                <button id="menu-open" class="hideOnDesktop"> <i class="fas fa-bars"></i> </button>
+                <button id="menu-close" class="hideOnDesktop hidden"> <i class="fas fa-times"></i> </button>
+                <nav class="nav col-auto hideOnMobile">
+                    <div class="col-auto">
+                        <a href="index.html" class="nav__button">Home</a>
+                    </div>
+                    <div class="col-auto" >
+                        <a href="about.html" class="nav__button--current nav__button ">About</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="services.html" class="nav__button">Services</a>
+                    </div>
+                </nav>
+                <nav class="nav col-12 hideOnDesktop">
+                    <div class="col-12" id="menu">
+                        <div class="col-12">
+                            <a href="index.html" class="nav__button">Home</a>
+                        </div>
+                        <div class="col-12" >
+                            <a href="about.html" class="nav__button--current nav__button ">About</a>
+                        </div>
+                        <div class="col-12">
+                            <a href="services.html" class="nav__button">Services</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    <section class="newsletter col-12">
+        <div class="container">
+            <div class="newsletter col-12">
+                <p class="newsletter__text col-6 sm-col-12 xs-col-12">
+                    Subscribe to my newsletter
+                </p>
+                <form class="newsletter__form col-6  sm-col-12 xs-col-12">
+                    <div class="newsletter__form__inner">
+                        <input class="newsletter__form__email" type="email" placeholder="Enter Email">
+                        <button class="newsletter__form__email__submitButton type="submit">
+                            Subscribe
+                        </button> 
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </section> 
+    <section class="about col-12">
+        <div class="container">  
+            <div class="about__main col-9 xs-col-12 sm-col-12 md-col-12">
+                <h1 class="about__main__title">About us</h1>
+                <p class="about__main__paragraph">
+                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+                </p>
+                <p class="about__main__paragraph about__main__paragraph--black">
+                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                </p>
+            </div>
+            <aside class="sidebar col-3 xs-col-12 sm-col-12 md-col-12">
+                <div class="sidebar--black col-12">
+                    <p class="sidebar__title">What we do</p>
+                    <p class="sidebar__text">
+                        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer class="footer col-12">
+        <p class="footer__text">Codrin Web design, No Copyright at all 2021</p>
+    </footer>
+    <script>
+        const hamburgerButtonOpen = document.getElementById("menu-open");
+        const hamburgerButtonClose = document.getElementById("menu-close");
+        const hamburgerMenu = document.getElementById("menu");
+
+        hamburgerButtonOpen.addEventListener("click", () => {
+            hamburgerMenu.classList.add("menu--expanded");
+            hamburgerButtonOpen.classList.add("hidden");
+            hamburgerButtonClose.classList.remove("hidden");
+        });
+
+        hamburgerButtonClose.addEventListener("click", () => {
+            hamburgerMenu.classList.remove("menu--expanded");
+            hamburgerButtonOpen.classList.remove("hidden");
+            hamburgerButtonClose.classList.add("hidden");
+        });
+    </script> 
+    </body>
+</html>

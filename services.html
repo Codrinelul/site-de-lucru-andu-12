@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/services.css">        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Codrin|Welcome</title>
+        <script src="https://kit.fontawesome.com/1491f15206.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header col-12">
+            <div class="container">
+                <div class="header__logoContainer col-6">
+                    <img class="header__logo" src="resources/img/LOGO Codrin.png" alt="codrin logo">
+                </div>
+                <button id="menu-open" class="hideOnDesktop"> <i class="fas fa-bars"></i> </button>
+                <button id="menu-close" class="hideOnDesktop hidden"> <i class="fas fa-times"></i> </button>
+                <nav class="nav col-auto hideOnMobile">
+                    <div class="col-auto">
+                        <a href="index.html" class="nav__button">Home</a>
+                    </div>
+                    <div class="col-auto" >
+                        <a href="about.html" class="nav__button ">About</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="services.html" class="nav__button--current nav__button">Services</a>
+                    </div>
+                </nav>
+                <nav class="nav col-12 hideOnDesktop">
+                    <div class="col-12" id="menu">
+                        <div class="col-12">
+                            <a href="index.html" class="nav__button">Home</a>
+                        </div>
+                        <div class="col-12" >
+                            <a href="about.html" class="nav__button ">About</a>
+                        </div>
+                        <div class="col-12">
+                            <a href="services.html" class="nav__button--current nav__button">Services</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    <section class="newsletter col-12">
+        <div class="container">
+            <div class="newsletter col-12">
+                <p class="newsletter__text col-6  sm-col-12 xs-col-12">
+                    Subscribe to my newsletter
+                </p>
+                <form class="newsletter__form col-6  sm-col-12 xs-col-12">
+                    <div class="newsletter__form__inner sm-col-12 xs-col-12">
+                        <input class="newsletter__form__email sm-col-12 xs-col-12" type="email" placeholder="Enter Email">
+                        <button class="newsletter__form__email__submitButton sm-col-12 xs-col-12" type="submit">
+                            Subscribe
+                        </button> 
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </section>
+   
+
+    <section class="services col-12">
+        <div class="container">
+            <h1 class="section__title">Services</h1>
+            <div class="services__main col-9 sm-col-12 xs-col-12 md-col-12 lg-col-12">
+                <ul class="services__main__list col-12">
+                    <li class="services__main__list__item">
+                        <h2 class="services__main__list__item__title">
+                            Website design
+                        </h2>
+                        <p>
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                        </p>
+                        <p>Pricing $1,000 - $3,000</p>
+                    </li>
+                    <li class="services__main__list__item">
+                        <h2 class="services__main__list__item__title">
+                            Website Maintenance
+                        </h2>
+                        <p>
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                        </p>
+                        <p>Pricing $1,000 - $3,000</p>
+                    </li>
+                    <li class="services__main__list__item">
+                        <h2 class="services__main__list__item__title">
+                            Website hosting
+                        </h2>
+                        <p>
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                        </p>
+                        <p>Pricing $1,000 - $3,000</p>
+                    </li>
+                </ul>
+            </div>    
+        
+            <aside class="services__sidebar col-3 xs-col-12 sm-col-12 md-col-12 lg-col-12">
+                <h2 class="col-12">Get a quote</h2>
+                <form class="services__sidebar__quote col-12">
+                    <div class="col-12"> 
+                        <p class="col-12">Name</p>
+                        <input class="services__sidebar__name col-12" placeholder="Name" type="text">
+                    </div>
+                    <div class="col-12">
+                        <p class="col-12">Email</p>
+                        <input class="services__sidebar__email col-12" type="email" placeholder="Email Address">
+                    </div>
+                    <div class="col-12">
+                        <p class="col-12">Message</p>
+                        <textarea class="services__sidebar__mesage col-12" type="Message"></textarea>
+                    </div>
+                    <button class="services__sidebar__submitButton" type="submit">Send</button>
+                </form>
+            </aside>
+        </div>
+    </section>
+    <footer class="footer col-12">
+        <p class="footer__text">Codrin Web design, No Copyright at all 2021</p>
+    </footer>  
+    <script>
+        const hamburgerButtonOpen = document.getElementById("menu-open");
+        const hamburgerButtonClose = document.getElementById("menu-close");
+        const hamburgerMenu = document.getElementById("menu");
+
+        hamburgerButtonOpen.addEventListener("click", () => {
+            hamburgerMenu.classList.add("menu--expanded");
+            hamburgerButtonOpen.classList.add("hidden");
+            hamburgerButtonClose.classList.remove("hidden");
+        });
+
+        hamburgerButtonClose.addEventListener("click", () => {
+            hamburgerMenu.classList.remove("menu--expanded");
+            hamburgerButtonOpen.classList.remove("hidden");
+            hamburgerButtonClose.classList.add("hidden");
+        });
+    </script> 
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Codrin|Welcome</title>
+        <script src="https://kit.fontawesome.com/1491f15206.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header col-12">
+            <div class="container">
+                <div class="header__logoContainer col-6">
+                    <img class="header__logo" src="resources/img/LOGO Codrin.png" alt="codrin logo">
+                </div>
+                <button id="menu-open" class="hideOnDesktop"> <i class="fas fa-bars"></i> </button>
+                <button id="menu-close" class="hideOnDesktop hidden"> <i class="fas fa-times"></i> </button>
+                <nav class="nav col-auto hideOnMobile">
+                    <div class="col-auto">
+                        <a href="index.html" class="nav__button--current nav__button">Home</a>
+                    </div>
+                    <div class="col-auto" >
+                        <a href="about.html" class="nav__button ">About</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="services.html" class="nav__button">Services</a>
+                    </div>
+                </nav>
+                <nav class="nav col-12 hideOnDesktop">
+                    <div class="col-12" id="menu">
+                        <div class="col-12">
+                            <a href="index.html" class="nav__button--current nav__button">Home</a>
+                        </div>
+                        <div class="col-12" >
+                            <a href="about.html" class="nav__button ">About</a>
+                        </div>
+                        <div class="col-12">
+                            <a href="services.html" class="nav__button">Services</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+     <section class="hero__image col-12">
+        <div class="container">
+            <div class="hero__image__text__box col-auto">
+                <h1 class="hero__image__text__title">
+                    Affordable Professional Websites
+                </h1>
+                <p class="hero__image__text__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                </p>
+            </div>
+        </div>    
+    </section>
+    <section class="newsletter col-12">
+        <div class="container">
+            <div class="newsletter col-12">
+                <p class="newsletter__text col-6 sm-col-12 xs-col-12">
+                    Subscribe to my newsletter
+                </p>
+                <form class="newsletter__form col-6 sm-col-12 xs-col-12">
+                    <div class="newsletter__form__inner">
+                        <input class="newsletter__form__email" type="email" placeholder="Enter Email">
+                        <button class="newsletter__form__email__submitButton" type="submit">
+                            Subscribe
+                        </button> 
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </section> 
+    <section class="col-12">
+        <div class="container">  
+            <div class="cards col-12">
+                <div class="cards__card col-4 sm-col-12 xs-col-12 md-col-12">
+                    <img class="cards__card__img" alt="HTML-logo" src="./resources/img/HTML-logo.png">
+                    <p class="cards__card__title">HTML5 Markup</p>
+                    <p class="cards__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivammi augue, viverra sit amet ultricies</p>
+                </div>
+                <div class="cards__card col-4 sm-col-12 xs-col-12 md-col-12">
+                    <img class="cards__card__img" src="./resources/img/CSS-logo.png" alt="CSS-logo">
+                    <p class="cards__card__title">CSS3 Markup</p>
+                    <p class="cards__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivammi augue, viverra sit amet ultricies</p>
+                </div>
+                <div class="cards__card col-4 sm-col-12 xs-col-12 md-col-12">
+                    <img class="cards__card__img" src="./resources/img/GD-logo.png" alt="Graphic Design-logo">
+                    <p class="cards__card__title">Graphic Design</p>
+                    <p class="cards__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivammi augue, viverra sit amet ultricies</p>
+                </div>
+            </div>
+        </div>      
+    </section>
+    <footer class="footer col-12">
+        <p class="footer__text">Codrin Web design, No Copyright at all 2021</p>
+    </footer>
+    <script>
+        const hamburgerButtonOpen = document.getElementById("menu-open");
+        const hamburgerButtonClose = document.getElementById("menu-close");
+        const hamburgerMenu = document.getElementById("menu");
+
+        hamburgerButtonOpen.addEventListener("click", () => {
+            hamburgerMenu.classList.add("menu--expanded");
+            hamburgerButtonOpen.classList.add("hidden");
+            hamburgerButtonClose.classList.remove("hidden");
+        });
+
+        hamburgerButtonClose.addEventListener("click", () => {
+            hamburgerMenu.classList.remove("menu--expanded");
+            hamburgerButtonOpen.classList.remove("hidden");
+            hamburgerButtonClose.classList.add("hidden");
+        });
+    </script> 
+    </body>
+</html>
